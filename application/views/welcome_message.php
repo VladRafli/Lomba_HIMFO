@@ -1,3 +1,7 @@
+<?php
+	defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -12,7 +16,7 @@
 		href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
 		rel="stylesheet">
 	<!-- custom stylesheet -->
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel = "stylesheet" type = "text/css" href = "css/styles.css">
 </head>
 
 <body>
@@ -72,12 +76,14 @@
 					<div class="col-lg-3 d-flex flex-column justify-content-center p-0">
 						<h1>Make programming skill your new exp</h1>
 						<p>Lorem ipsum dolor sit amet</p>
-						<button type="button" name="btn-signup" class="btn btn-primary">
-							<div class="d-flex justify-content-center align-items-center">
-								<span class="mr-3">Sign Up</span>
-								<i class="fas fa-arrow-right"></i>
-							</div>
-						</button>
+						<a href="#">
+							<button type="button" name="btn-signup" class="btn btn-primary">
+								<div class="d-flex justify-content-center align-items-center">
+									<span class="mr-3">Sign Up</span>
+									<i class="fas fa-arrow-right"></i>
+								</div>
+							</button>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -99,20 +105,83 @@
 		</section>
 
 		<section id="timeline">
-			<div class="timeline-container">
-
+			<div class="timeline-container d-flex flex-column justify-content-center align-items-center">
+				<h1>Timeline</h1>
 			</div>
 		</section>
 
 		<section id="guideline">
-			<div class="guideline-container">
-
+			<div class="guideline-container d-flex flex-column justify-content-center align-items-center">
+				<h1>Guidelines</h1>
+				<nav>
+					<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+						<a class="nav-item nav-link active" id="nav-ui/ux-tab" data-toggle="tab" href="#nav-ui/ux"
+							role="tab" aria-controls="nav-ui/ux" aria-selected="true">UI/UX</a>
+						<a class="nav-item nav-link" id="nav-website-tab" data-toggle="tab" href="#nav-website"
+							role="tab" aria-controls="nav-website" aria-selected="false">Website</a>
+					</div>
+				</nav>
+				<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+					<div class="tab-pane fade show active" id="nav-ui/ux" role="tabpanel"
+						aria-labelledby="nav-ui/ux-tab">
+						<ol type="number">
+							<li>Peserta bisa perorangan atau tim beranggotakan maksimal 3 orang yang terdiri (tapi tidak
+								terbatas dari) UI Designer, UX
+								Designer, UX Researcher, UX Writer, Graphic Designer, Copywriter, Project Manager,
+								Product Owner, Front-end Developer,
+								atau Back-end Developer, dll.
+							</li>
+							<li>Semua peserta harus menyetujui dan mengikuti Syarat dan Ketentuan (umum dan khusus)
+							</li>
+							<li>
+								Daftarkan diri atau tim kamu melalui link pendaftaran. Tim Jenius akan mengirimkan link
+								untuk pengiriman karya kamu ke
+								email yang telah didaftarkan.
+							</li>
+							<li>
+								10 tim terpilih akan mendapatkan kesempatan untuk bersaing ke babak final dan melempar
+								ide desain UI/UX mereka di
+								Co.Creation Week 2020
+							</li>
+						</ol>
+					</div>
+					<div class="tab-pane fade" id="nav-website" role="tabpanel" aria-labelledby="nav-website-tab">
+						<ol type="number">
+							<li>Peserta bisa perorangan atau tim beranggotakan maksimal 3 orang yang terdiri (tapi tidak
+								terbatas dari) UI Designer, UX
+								Designer, UX Researcher, UX Writer, Graphic Designer, Copywriter, Project Manager,
+								Product Owner, Front-end Developer,
+								atau Back-end Developer, dll.
+							</li>
+							<li>Semua peserta harus menyetujui dan mengikuti Syarat dan Ketentuan (umum dan khusus)
+							</li>
+							<li>
+								Daftarkan diri atau tim kamu melalui link pendaftaran. Tim Jenius akan mengirimkan link
+								untuk pengiriman karya kamu ke
+								email yang telah didaftarkan.
+							</li>
+							<li>
+								10 tim terpilih akan mendapatkan kesempatan untuk bersaing ke babak final dan melempar
+								ide desain UI/UX mereka di
+								Co.Creation Week 2020
+							</li>
+						</ol>
+					</div>
+				</div>
+				<a href="#">
+					<button type="button" name="btn-signup" class="btn btn-secondary">
+						<div class="d-flex justify-content-center align-items-center">
+							<span class="mr-3">Download Guidebook</span>
+							<i class="fas fa-download"></i>
+						</div>
+					</button>
+				</a>
 			</div>
 		</section>
 
 		<section id="prize">
-			<div class="prize-container">
-
+			<div class="prize-container d-flex flex-column justify-content-center align-items-center">
+				<h1>Prize</h1>
 			</div>
 		</section>
 	</main>

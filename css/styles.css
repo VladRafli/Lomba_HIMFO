@@ -57,6 +57,20 @@ section {
 	color: #000 !important;
 }
 
+.btn.btn-secondary {
+	width: 300px !important;
+	border-width: 2px;
+	background: #4A69BB;
+	border-color: #4A69BB;
+	color: #fff !important;
+}
+
+.btn.btn-secondary:hover {
+	background: transparent;
+	border-color: #4A69BB;
+	color: #000 !important;
+}
+
 /* header  */
 
 .menu-bar {
@@ -91,6 +105,69 @@ section {
 }
 
 .about-container h1 {
+	margin-bottom: 5rem;
+}
+
+/* timeline */
+
+.timeline-container {
+	margin: 7.5rem auto;
+	padding: 2rem;
+	width: 60%;
+	height: 50%;
+}
+
+.timeline-container h1 {
+	margin-bottom: 5rem;
+}
+
+/* guidelines */
+
+.guideline-container {
+	margin: 10rem auto;
+	padding: 2rem;
+	width: 60%;
+	height: 50%;
+}
+
+.guideline-container h1 {
+	margin-bottom: 3rem;
+}
+
+.guideline-container .nav .nav-link {
+	color: #7070704D !important;
+	font-size: 3rem !important;
+}
+
+.guideline-container .nav .active {
+	color: #4A69BB80 !important;
+	font-size: 3rem !important;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #f3f3f3;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 4px solid !important;
+    font-weight: bold;
+}
+
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+/* prize */
+
+.prize-container {
+	margin: 7.5rem auto;
+	padding: 2rem;
+	width: 60%;
+	height: 50%;
+}
+
+.prize-container h1 {
 	margin-bottom: 5rem;
 }
 
