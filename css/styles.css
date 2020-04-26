@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-	font-size: 3.5rem;
+	font-size: 3.2rem;
 }
 
 p, a {
@@ -16,7 +16,9 @@ p, a {
 }
 
 section {
-	padding: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 100vh;
 }
 
@@ -86,15 +88,13 @@ section {
 
 /* home */
 
-.home-container {
-	margin: 5rem;
+.home-container {	
 	width: 80%;
 }
 
 /* about */
 
 .about-container {
-	margin: 7.5rem auto;
 	padding: 2rem;
 	width: 60%;
 	height: 50%;
@@ -124,14 +124,12 @@ section {
 /* guidelines */
 
 .guideline-container {
-	margin: 10rem auto;
-	padding: 2rem;
-	width: 60%;
-	height: 50%;
+	margin-top: 3rem;
+	width: 75%;
 }
 
 .guideline-container h1 {
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 }
 
 .guideline-container .nav .nav-link {
@@ -161,14 +159,27 @@ section {
 /* prize */
 
 .prize-container {
-	margin: 7.5rem auto;
-	padding: 2rem;
+	margin: 3.5rem auto 0;
 	width: 60%;
-	height: 50%;
+	height: 75%;
 }
 
 .prize-container h1 {
-	margin-bottom: 5rem;
+	margin-bottom: 2rem;
+}
+
+.prize-container p {
+	margin-top: 1rem;
+	color: #4A69BB;
+}
+
+.prize-card {
+	padding: 85px 0;
+	width: 300px;
+	height: 300px;
+	text-align: center;
+	border: 1px solid #4A69BB;
+	color: #4A69BB;
 }
 
 /* footer */
@@ -187,3 +198,22 @@ footer ul {
 	padding-left: 0;
 	list-style-type: none;
 }
+
+@media only screen and (max-width: 1200px) {
+	body {
+	  	font-size: 0.75rem;
+	}
+
+	h1,  .guideline-container .nav .nav-link, .guideline-container .nav .active {
+		font-size: 2rem !important;
+	}
+
+	.nav-link {
+		padding-left: 0.5rem !important;
+		padding-right: 0.5rem !important;
+	}
+
+	.home-container {
+		text-align: center;
+	}
+  }

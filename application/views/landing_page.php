@@ -7,6 +7,7 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>HIMFEST</title>
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -16,7 +17,7 @@
 		href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
 		rel="stylesheet">
 	<!-- custom stylesheet -->
-	<link rel = "stylesheet" type = "text/css" href = "css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
@@ -105,13 +106,13 @@
 		</section>
 
 		<section id="timeline">
-			<div class="timeline-container d-flex flex-column justify-content-center align-items-center">
+			<div class="timeline-container text-center">
 				<h1>Timeline</h1>
 			</div>
 		</section>
 
 		<section id="guideline">
-			<div class="guideline-container d-flex flex-column justify-content-center align-items-center">
+			<div class="guideline-container text-center">
 				<h1>Guidelines</h1>
 				<nav>
 					<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
@@ -121,7 +122,7 @@
 							role="tab" aria-controls="nav-website" aria-selected="false">Website</a>
 					</div>
 				</nav>
-				<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+				<div class="tab-content py-3 px-3 px-sm-0 text-left" id="nav-tabContent">
 					<div class="tab-pane fade show active" id="nav-ui/ux" role="tabpanel"
 						aria-labelledby="nav-ui/ux-tab">
 						<ol type="number">
@@ -180,8 +181,24 @@
 		</section>
 
 		<section id="prize">
-			<div class="prize-container d-flex flex-column justify-content-center align-items-center">
+			<div class="prize-container text-center">
 				<h1>Prize</h1>
+				<div class="d-flex align-items-center justify-content-center">
+					<div class="prize-card mr-3">
+						<h4>#2</h4>
+						<h1>Rp 20 juta</h1>
+					</div>
+					<div class="prize-card mb-5">
+						<h4>#1</h4>
+						<h1>Rp 35 juta</h1>
+					</div>
+					<div class="prize-card ml-3">
+						<h4>#3</h4>
+						<h1>Rp 10 juta</h1>
+					</div>
+				</div>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nesciunt quas quibusdam hic harum
+					doloribus id, dolorum iusto possimus impedit.</p>
 			</div>
 		</section>
 	</main>
@@ -190,9 +207,9 @@
 		<hr />
 		<div class="container">
 			<div class="row">
-				<div class="col-8">
-					<div class="row">
-						<div class="col-lg-4">
+				<div class="col-lg-8">
+					<div class="d-flex">
+						<div class="col-sm-4">
 							<h6>Contact</h6>
 							<ul>
 								<li>HIMFEST Instagram</li>
@@ -200,7 +217,7 @@
 								<li>+628-1405-2222</li>
 							</ul>
 						</div>
-						<div class="col-lg-4">
+						<div class="col-sm-4">
 							<h6>About</h6>
 							<ul>
 								<li>HIMFEST</li>
@@ -208,7 +225,7 @@
 								<li>Website</li>
 							</ul>
 						</div>
-						<div class="col-lg-4">
+						<div class="col-sm-4">
 							<h6>Community</h6>
 							<ul>
 								<li>More Information</li>
@@ -218,9 +235,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-lg-4">
 					<div class="d-flex justify-content-center align-items-center">
-						<img src="images/chrome.png" alt="logo" class="w-100">
+						<img src="images/chrome.png" alt="logo" class="w-50">
 						<h1>HIMFEST</h1>
 					</div>
 				</div>
