@@ -6,6 +6,7 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 0.95rem;
 	margin:0;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -20,6 +21,8 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	align-content: end;
+	width: 100vw;
 	height: 100vh;
 }
 
@@ -87,28 +90,6 @@ section {
 	padding-right: 0 !important;
 }
 
-/* home */
-
-.home-container {	
-	width: 80%;
-}
-
-/* about */
-
-.about-container {
-	padding: 2rem;
-	width: 60%;
-	height: 50%;
-}
-
-.about-container h5 {
-	color: #4A69BB;
-}
-
-.about-container h1 {
-	margin-bottom: 5rem;
-}
-
 /* timeline */
 
 .timeline-container {
@@ -121,105 +102,6 @@ section {
 .timeline-container h1 {
 	margin-bottom: 5rem;
 }
-
-/* guidelines */
-
-.guideline-container {
-	margin-top: 3rem;
-	width: 75%;
-}
-
-.guideline-container h1 {
-	margin-bottom: 2rem;
-}
-
-.guideline-container .nav .nav-link {
-	color: #7070704D !important;
-	font-size: 3rem !important;
-}
-
-.guideline-container .nav .active {
-	color: #4A69BB80 !important;
-	font-size: 3rem !important;
-}
-
-#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-	color: #f3f3f3;
-	background-color: transparent;
-	border-color: transparent transparent #f3f3f3;
-	border-bottom: 4px solid !important;
-	font-weight: bold;
-}
-
-#tabs .nav-tabs .nav-link {
-	border: 1px solid transparent;
-	border-top-left-radius: .25rem;
-	border-top-right-radius: .25rem;
-}
-
-/* prize */
-
-.prize-container {
-	margin: 3.5rem auto 0;
-	width: 60%;
-	height: 75%;
-}
-
-.prize-container h1 {
-	margin-bottom: 2rem;
-}
-
-.prize-container p {
-	margin-top: 1rem;
-	color: #4A69BB;
-}
-
-.prize-card {
-	padding: 85px 0;
-	width: 300px;
-	height: 300px;
-	text-align: center;
-	border: 1px solid #4A69BB;
-	color: #4A69BB;
-}
-
-/* footer */
-
-footer {
-	padding: 0 5rem 5rem;
-	height: 75vh;
-}
-
-footer hr {
-	margin-bottom: 10rem;	
-	border-top: 1px solid #707070;
-}
-
-footer ul {
-	padding-left: 0;
-	list-style-type: none;
-}
-
-@media only screen and (max-width: 1200px) {
-	body {
-		font-size: 0.75rem;
-	}
-
-	h1,  .guideline-container .nav .nav-link, .guideline-container .nav .active {
-		font-size: 2rem !important;
-	}
-
-	.nav-link {
-		padding-left: 0.5rem !important;
-		padding-right: 0.5rem !important;
-	}
-
-	.home-container {
-		text-align: center;
-	}
-}
-
-/*//Orlen*/
 
 .timeline, .timeline-horizontal {
 	list-style: none;
@@ -398,20 +280,47 @@ footer ul {
 	font-size: 1.471rem;
 }
 
-.container-section{
-	display: block;
-	height: 100vh;
+/* guidelines */
+
+.guidelines-container {
+	margin-top: 3rem;
+	width: 75%;
 }
 
-.container-section-9{
-	display: block;
-	height: 90vh;
+.guidelines-container h1 {
+	margin-bottom: 2rem;
 }
 
-.prize-card2 {
+.guidelines-container .nav .nav-link {
+	color: #7070704D !important;
+	font-size: 3rem !important;
+}
+
+.guidelines-container .nav .active {
+	color: #4A69BB80 !important;
+	font-size: 3rem !important;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	color: #f3f3f3;
+	background-color: transparent;
+	border-color: transparent transparent #f3f3f3;
+	border-bottom: 4px solid !important;
+	font-weight: bold;
+}
+
+#tabs .nav-tabs .nav-link {
+	border: 1px solid transparent;
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
+}
+
+/* prize */
+
+.prize-card {
 	position: relative;
 	width: 100%;
-	padding-top: 100%; /* 1:1 Aspect Ratio */
+	height: 300px;
 	text-align: center;
 	border: 5px solid #4A69BB;
 	color: #4A69BB;
@@ -428,7 +337,7 @@ footer ul {
 	color: white !important;
 }
 
-.prize-card2 > .text{
+.prize-card > .text{
 	margin: 0;
 	position: absolute;
 	top: 50%;
@@ -445,11 +354,63 @@ footer ul {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -220%);
+	transform: translate(-50%, -250%);
 	z-index: 3
 }
 
-.display-block
-{
-	display: block
+/* footer */
+
+footer {
+	background-color: #8A7FF5;
+	margin-top: 25%;
+	padding: 3rem 0;
+	height: 25vh;
+	color: #fff;
 }
+
+footer a, footer a:hover, footer a:visited {
+	color: #fff;
+}
+
+.social {
+	padding: 0 2rem;
+	text-align: right;
+}
+
+/* responsiveness */
+
+@media only screen and (max-width: 1200px) {
+	body {
+		font-size: 0.75rem;
+	}
+
+	h1,  .guideline-container .nav .nav-link, .guideline-container .nav .active {
+		font-size: 2rem !important;
+	}
+
+	.nav-link {
+		padding-left: 0.5rem !important;
+		padding-right: 0.5rem !important;
+	}
+
+	section {
+		text-align: center;
+	}
+
+	footer {
+		margin-top: 250%;
+		height: 30vh;
+		font-size: 0.6rem;	
+	}
+
+	.prize-card {
+		padding-top: 100%;
+		height: auto;
+	}
+
+	.social {
+		margin-top: 1rem;
+		text-align: center;
+	}
+}
+	
