@@ -17,14 +17,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
 		rel="stylesheet">
 	<!-- custom stylesheet -->
-	<link rel="stylesheet" type="text/css" href="<?= base_url()?>css/styles.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url()?>css/index.css">
 </head>
 
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light pt-3 pb-3">
 			<div class="container">
-				<a class="navbar-brand" href="#"><img src="<?= base_url()?>images/chrome.png" alt="logo"
+				<a class="navbar-brand" href="<?= site_url()?>"><img src="<?= base_url()?>images/chrome.png" alt="logo"
 						class="w-25">Himfest</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
 					aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,11 +46,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<a class="nav-link" href="#prize">Prize</a>
 						</li>
 					</ul>
-					<form class="form-inline my-2 my-lg-0">
-						<button class="btn my-2 my-sm-0" type="submit">Login</button>
-						<button class="btn btn-primary my-2 my-sm-0" type="submit">Sign Up <i
-								class="fas fa-arrow-right"></i></button>
-					</form>
+					<div class="form-inline my-2 my-lg-0">
+						<a href="<?= site_url('login')?>"><button class="btn my-2 my-sm-0">Login</button></a>
+						<a href="<?= site_url('signup')?>"><button class="btn btn-primary my-2 my-sm-0">Sign Up <i
+									class="fas fa-arrow-right"></i></button></a>
+					</div>
 				</div>
 			</div>
 		</nav>
@@ -70,8 +70,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<p>
 							Lorem ipsum dolor sit amet
 						</p>
-						<button class="btn btn-primary mt-4" type="submit">Sign Up <i
-								class="fas fa-arrow-right"></i></button>
+						<a href="<?= site_url('signup')?>"><button class="btn btn-primary mt-4">Sign Up <i
+								class="fas fa-arrow-right"></i></button></a>
 					</div>
 				</div>
 			</div>
@@ -92,8 +92,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							Informasi dalam dunia pendidikan yang ditujukan untuk memberikan warna baru dalam media
 							pembelajaran.
 						</p>
-						<button class="btn btn-primary mt-sm-4 ml-sm-3" type="submit">Sign Up <i
-								class="fas fa-arrow-right"></i></button>
+						<a href="<?= site_url('signup')?>"><button class="btn btn-primary mt-sm-4 ml-sm-3">Sign Up <i
+								class="fas fa-arrow-right"></i></button></a>
 					</div>
 					<div class="col-md-7">
 						<img src="<?= base_url()?>/images/Group10@2x.png" alt="home section"
@@ -246,7 +246,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="prize-card">
 									<img src="<?= base_url()?>/images/second.png" class="medal w-25">
 									<span class="text">
-										Rp 20 juta
+										Rp 500 ribu
 									</span>
 								</div>
 							</div>
@@ -254,7 +254,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="prize-card prize-active">
 									<img src="<?= base_url()?>/images/first.png" class="medal w-25">
 									<span class="text">
-										Rp 35 juta
+										Rp 700 ribu
 									</span>
 								</div>
 							</div>
@@ -262,7 +262,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="prize-card">
 									<img src="<?= base_url()?>/images/third.png" class="medal w-25">
 									<span class="text">
-										Rp 10 juta
+										Rp 300 ribu
 									</span>
 								</div>
 							</div>
@@ -283,7 +283,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-md-8">
 					<div class="row">
 						<div class="col-4 d-flex justify-content-center align-items-center">
-							<img src="<?= base_url()?>images/chrome.png" alt="logo"class="w-25"><h6 class="m-0">Himfest</h6>
+							<img src="<?= base_url()?>images/chrome.png" alt="logo" class="w-25">
+							<h6 class="m-0">Himfest</h6>
 						</div>
 						<div class="col-4 d-flex flex-column justify-content-center">
 							<h5>PHONE</h5>
@@ -297,11 +298,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="col-md-4">
 					<div class="social">
-						<a href="#" class="d-inline-block mx-3"><i class="fab fa-instagram fa-2x"></i></a> 
-						<a href="#" class="d-inline-block mx-3"><i class="fab fa-github fa-2x"></i></a> 
+						<a href="#" class="d-inline-block mx-3"><i class="fab fa-instagram fa-2x"></i></a>
+						<a href="#" class="d-inline-block mx-3"><i class="fab fa-github fa-2x"></i></a>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</footer>
 
