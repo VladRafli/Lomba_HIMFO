@@ -1,0 +1,264 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: #f3f3f3;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.95rem;
+	margin: 0;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+p,
+a {
+	font-size: 0.812rem;
+	font-weight: 500;
+}
+
+.text-primary {
+	color: #4346E1 !important;
+}
+
+.text-secondary {
+	color: #A7A7A7 !important;
+}
+
+.btn.btn-primary {
+	min-width: 100px;
+	border-width: 2px;
+	background: #4A69BB;
+	border-color: #4A69BB;
+	border-radius: 1rem;
+	color: #fff !important;
+}
+
+.btn.btn-primary:hover, li.active a.btn.btn-primary {
+	background: transparent;
+	border-color: #4A69BB;
+	border-radius: 1rem;
+	color: #4346E1 !important;
+}
+
+.nav-pills li {
+	margin-right: 0.5rem;
+}
+
+.dashboard-container {
+	background-color: #fff;
+	width: 75vw;
+	height: 95vh;
+	border-radius: 2rem;
+}
+
+.sidebar {
+	margin: 0;
+	padding: 0;
+	padding-left: 1rem;
+	float: left;
+	width: 25%;
+	background-color: #fafafa;
+	height: 100%;
+	overflow: auto;
+	border-bottom-left-radius: 2rem;
+	border-top-left-radius: 2rem;
+	border-right: 1px solid #f1f1f1;
+}
+
+.sidebar a {
+	display: block;
+	color: #000;
+	padding: 16px;
+	text-decoration: none;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active .fas {
+	border: 0 !important;
+	color: #4346E1 !important;
+}
+
+.nav-tabs .nav-link {
+	border: 0 !important;
+}
+
+.sidebar a:hover:not(.active) {
+	background-color: #fff;
+	color: #000;
+}
+
+.head-profile {
+	margin: 1rem 3rem 0 0;
+}
+
+.head-profile .profile-pict {
+	margin: 0.5rem;
+	width: 75px;
+	height: 75px;
+}
+
+.main-menu,
+.akun-saya {
+	margin: 2.5rem 0 1rem 1rem;
+}
+
+.sign-out {
+	margin: 3rem 0 2rem;
+}
+
+.content {
+	margin: 0;
+	padding: 2rem;
+	float: right;
+	width: 75%;
+	background-color: #fafafa;
+	height: 100%;
+	overflow: auto;
+	border-bottom-right-radius: 2rem;
+	border-top-right-radius: 2rem;
+}
+
+.greeting-container {
+	position: relative;
+	width: 100%;
+	height: 200px;
+}
+
+.greeting {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding-top: 1rem;
+	padding-left: 1rem;
+	padding-right: 40%;
+	padding-bottom: 1rem;
+	width: 100%;
+	height: 60%;
+	background-color: #D9D2D2;
+}
+
+.dashboard-image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 3;
+	width: 50%;
+	height: 80%;
+}
+
+.detail-team {
+	margin: 2rem 0;
+	max-height: 500px;
+}
+
+.detail-team h5 {
+	margin: 0 5px;
+	padding: 0;
+}
+
+.detail-team p {
+	margin: 0 5px;
+	font-size: 0.5rem;
+}
+
+.detail-team .teammate-container {
+	overflow: auto;
+}
+
+.teammate-container {
+	width: 100%;
+	height: 100%;
+}
+
+.teammate-card {
+	position: relative;
+	margin: 1rem 0;
+	padding: 0;
+	width: 100%;
+	height: 100px;
+	-webkit-box-shadow: 10px 10px 5px -5px rgba(112, 112, 112, 0.5);
+	-moz-box-shadow: 10px 10px 5px -5px rgba(112, 112, 112, 0.5);
+	box-shadow: 10px 10px 5px -5px rgba(112, 112, 112, 0.5);
+	border-radius: 1rem;
+}
+
+.teammate-pict {
+	float: left;
+	width: 100px;
+	height: 100%;
+	border-radius: 1rem;
+}
+
+.teammate-card .teammate-name {
+	margin: auto auto auto 1rem;
+}
+
+.teammate-card .lomba {
+	float: right;
+	margin: auto 1rem auto auto;
+	width: 50px;
+	height: 50%;
+	background-color: #4346E1;
+	-webkit-box-shadow: 7px 7px 5px -5px rgba(112, 112, 112, 0.5);
+	-moz-box-shadow: 7px 7px 5px -5px rgba(112, 112, 112, 0.5);
+	box-shadow: 7px 7px 5px -5px rgba(112, 112, 112, 0.5);
+	border-radius: 1rem;
+}
+
+.teammate-card .lomba h6 {
+	margin: 0;
+	padding: 0;
+	font-size: 0.75rem;
+	color: #fff;
+}
+
+.teammates .teammate-container {
+	margin-top: 2rem;
+	width: 75%;
+}
+
+.teammates .teammate-card {
+	height: 150px;
+}
+
+.teammates .teammate-pict {
+	width: 150px;
+}
+
+.teammates .teammate-profile {
+	margin: 1rem;
+}
+
+.teammates .teammate-container .teammate-card .teammate-name {
+	margin: 0;
+}
+
+.teammates .teammate-container .teammate-card ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.teammates .teammate-container .teammate-card li {
+	margin: 0.5rem 0;
+	font-size: 0.75rem;
+}
+
+.teammates .teammate-container .teammate-card a {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 0.75rem;
+}
+
+.result-container {
+	margin: 2rem 0;
+	background-color: #D9D2D2;
+	border-radius: 2rem;
+	width: 100%;
+	height: 300px;
+}
