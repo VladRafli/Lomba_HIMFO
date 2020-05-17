@@ -27,16 +27,87 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- custom stylesheet -->
 	<link rel="stylesheet" type="text/css" href="<?= base_url()?>css/dashboard.css">
 	<style>
-	.fx:after,.sidebar .widget:after{content:"";display:table;clear:both}
-	.fprogress b{text-transform:uppercase;font-size:14px;margin-bottom:2px;display:block}
-	.fbar{width:100%;border:1px solid #ddd;height:25px;display:block;border-radius:3px;text-align:center;position:relative}
-	.fbar span{display:block;height:50%;background:#6A5ACD;position:relative}
-	.fbar span:after{content:attr(data-percent);color:#fff;text-align:center;position:absolute;left:0;right:0;top:0}
-	.fbar-radius{width:130px;height:130px;border-radius:100%;overflow:hidden;border:0;left:50px}
-	.fbar-radius:after{color:black;top:33%;font-size:20px;content:attr(data-percent);z-index:30;position:absolute;left:0;right:0}
-	.fbar-radius span{display:block}
-	.fbar-radius:before{content:"";background:#F5F5F5;width:105px;height:105px;position:absolute;left:13px;top:13px;border-radius:100%;z-index:10}
-	#infront{z-index:-100}
+		.fx:after,
+		.sidebar .widget:after {
+			content: "";
+			display: table;
+			clear: both
+		}
+
+		.fprogress b {
+			text-transform: uppercase;
+			font-size: 14px;
+			margin-bottom: 2px;
+			display: block
+		}
+
+		.fbar {
+			width: 100%;
+			border: 1px solid #ddd;
+			height: 25px;
+			display: block;
+			border-radius: 3px;
+			text-align: center;
+			position: relative
+		}
+
+		.fbar span {
+			display: block;
+			height: 50%;
+			background: #6A5ACD;
+			position: relative
+		}
+
+		.fbar span:after {
+			content: attr(data-percent);
+			color: #fff;
+			text-align: center;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0
+		}
+
+		.fbar-radius {
+			width: 130px;
+			height: 130px;
+			border-radius: 100%;
+			overflow: hidden;
+			border: 0;
+			left: 50px
+		}
+
+		.fbar-radius:after {
+			color: black;
+			top: 33%;
+			font-size: 20px;
+			content: attr(data-percent);
+			z-index: 30;
+			position: absolute;
+			left: 0;
+			right: 0
+		}
+
+		.fbar-radius span {
+			display: block
+		}
+
+		.fbar-radius:before {
+			content: "";
+			background: #F5F5F5;
+			width: 105px;
+			height: 105px;
+			position: absolute;
+			left: 13px;
+			top: 13px;
+			border-radius: 100%;
+			z-index: 10
+		}
+
+		#infront {
+			z-index: -100
+		}
+
 	</style>
 </head>
 
@@ -110,21 +181,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<p class="text-secondary">Team details</p>
 								<div class="teammate-container d-flex flex-column">
 									<div class="teammate-card d-flex">
-										<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt="" class="teammate-pict">
+										<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt=""
+											class="teammate-pict">
 										<h6 class="teammate-name">Anggota 1</h6>
 										<div class="lomba d-flex justify-content-center align-items-center">
 											<h6>UI/UX</h6>
 										</div>
 									</div>
 									<div class="teammate-card d-flex">
-										<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt="" class="teammate-pict">
+										<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt=""
+											class="teammate-pict">
 										<h6 class="teammate-name">Anggota 2</h6>
 										<div class="lomba d-flex justify-content-center align-items-center">
 											<h6>UI/UX</h6>
 										</div>
 									</div>
 									<div class="teammate-card d-flex">
-										<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt="" class="teammate-pict">
+										<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt=""
+											class="teammate-pict">
 										<h6 class="teammate-name">Anggota 3</h6>
 										<div class="lomba d-flex justify-content-center align-items-center">
 											<h6>UI/UX</h6>
@@ -135,11 +209,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 						<div class="col-4">
 							<div class="detail-team">
-							<h5>Proses Registrasi</h5>
-							<p class="text-secondary">All time</p>
+								<h5>Proses Registrasi</h5>
+								<p class="text-secondary">All time</p>
 								<div class="fprogress fx">
-									<div class="fbar fbar-radius" data-percent="100%"><span style="width:100%"><br><div id=infront>
-									</div></span>
+									<div class="fbar fbar-radius" data-percent="100%"><span style="width:100%"><br>
+											<div id=infront>
+											</div>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -153,7 +229,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<p class="text-secondary">Team details</p>
 						<div class="teammate-container d-flex flex-column">
 							<div class="teammate-card d-flex">
-								<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt="" class="teammate-pict">
+								<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt=""
+									class="teammate-pict">
 								<div class="teammate-profile">
 									<h6 class="teammate-name">Anggota 1</h6>
 									<ul class="text-secondary">
@@ -165,7 +242,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<a href="#">Edit Profile</a>
 							</div>
 							<div class="teammate-card d-flex">
-								<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt="" class="teammate-pict">
+								<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt=""
+									class="teammate-pict">
 								<div class="teammate-profile">
 									<h6 class="teammate-name">Anggota 2</h6>
 									<ul class="text-secondary">
@@ -177,7 +255,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<a href="#">Edit Profile</a>
 							</div>
 							<div class="teammate-card d-flex">
-								<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt="" class="teammate-pict">
+								<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt=""
+									class="teammate-pict">
 								<div class="teammate-profile">
 									<h6 class="teammate-name">Anggota 3</h6>
 									<ul class="text-secondary">
@@ -208,7 +287,44 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 				<div class="tab-pane fade" id="nav-upload" role="tabpanel" aria-labelledby="nav-upload-tab">
 					<h1>Upload Files</h1>
-					<p class="text-secondary">Upload file sesuai instruksi</p>
+					<p class="text-secondary">Upload karya anda sesuai instruksi</p>
+					<form action="" method="post">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-8 pt-3 pr-3 pb-4 pl-0">
+									<div class="file-drop-area">
+										<input type="file" name="file" multiple required>
+										<img src="<?= base_url()?>images/dropfile@2x.png" alt="" class="w-100 h-100">
+									</div>
+								</div>
+								<div class="col-lg-4 p-0">
+									<div class="row-8 p-0">
+										<div class="file-info d-flex align-items-center text-secondary">
+											<i class="fas fa-print fa-fw text-primary ml-4 mr-2"></i>|
+											<span class="file-name ml-3"></span>
+										</div>
+										<div class="file-info d-flex align-items-center text-secondary">
+											<i class="fas fa-link fa-fw text-primary ml-4 mr-2"></i>|
+											<span class="file-url ml-3"></span>
+										</div>
+										<div class="file-info d-flex align-items-center text-secondary">
+											<i class="fas fa-bookmark fa-fw text-primary ml-4 mr-2"></i>|
+											<span class="file-category ml-3"></span>
+										</div>
+									</div>
+									<div class="row-4">
+										<div class="d-flex justify-content-center mt-2 custom-control custom-checkbox">
+											<input type="checkbox" name="verify" id="verify" class="mr-2 custom-control-input mt-0">
+											<label for="verify" class="custom-control-label m-0 pt-1">Karya ini buatan saya*</label> 
+										</div>
+										<button type="submit" class="btn upload-button">UPLOAD FILE</button>
+										<button type="reset" class="btn cancel-button">BATAL</button>
+									</div>
+								</div>
+								<p class="w-100 text-left">*) Dengan mencentang <em>'karya ini buatan saya'</em> maka anda siap menerima konsekuensi yang ada bila ditemukan bahwa karya tersebut bukan milik anda</p>
+							</div>
+						</div>
+					</form>
 				</div>
 
 				<div class="tab-pane fade" id="nav-edit" role="tabpanel" aria-labelledby="nav-edit-tab">
@@ -236,6 +352,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</script>
 	<!-- fontawesome  -->
 	<script src="https://kit.fontawesome.com/435e55727b.js" crossorigin="anonymous"></script>
+	<!-- custom scripts  -->
+	<script src="<?= base_url()?>js/dashboard.js"></script>
 </body>
 
 </html>
