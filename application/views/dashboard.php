@@ -26,6 +26,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		rel="stylesheet">
 	<!-- custom stylesheet -->
 	<link rel="stylesheet" type="text/css" href="<?= base_url()?>css/dashboard.css">
+	<style>
+	.fx:after,.sidebar .widget:after{content:"";display:table;clear:both}
+	.fprogress b{text-transform:uppercase;font-size:14px;margin-bottom:2px;display:block}
+	.fbar{width:100%;border:1px solid #ddd;height:25px;display:block;border-radius:3px;text-align:center;position:relative}
+	.fbar span{display:block;height:50%;background:#6A5ACD;position:relative}
+	.fbar span:after{content:attr(data-percent);color:#fff;text-align:center;position:absolute;left:0;right:0;top:0}
+	.fbar-radius{width:130px;height:130px;border-radius:100%;overflow:hidden;border:0;left:50px}
+	.fbar-radius:after{color:black;top:33%;font-size:20px;content:attr(data-percent);z-index:30;position:absolute;left:0;right:0}
+	.fbar-radius span{display:block}
+	.fbar-radius:before{content:"";background:#F5F5F5;width:105px;height:105px;position:absolute;left:13px;top:13px;border-radius:100%;z-index:10}
+	#infront{z-index:-100}
+	</style>
 </head>
 
 <body>
@@ -122,7 +134,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 						</div>
 						<div class="col-4">
-
+							<div class="detail-team">
+							<h5>Proses Registrasi</h5>
+							<p class="text-secondary">All time</p>
+								<div class="fprogress fx">
+									<div class="fbar fbar-radius" data-percent="100%"><span style="width:100%"><br><div id=infront>
+									</div></span>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
