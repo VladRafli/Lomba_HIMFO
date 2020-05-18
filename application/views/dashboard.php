@@ -2,7 +2,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
-
 <!doctype html>
 <html lang="en" dir="ltr">
 
@@ -53,9 +52,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		.fbar span {
 			display: block;
-			height: 50%;
-			background: #6A5ACD;
-			position: relative
+			height: 60%;
+			background: #4346E1;
+			position: relative;
 		}
 
 		.fbar span:after {
@@ -94,12 +93,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		.fbar-radius:before {
 			content: "";
-			background: #F5F5F5;
-			width: 105px;
-			height: 105px;
+			background: #FFF;
+			width: 110px;
+			height: 110px;
 			position: absolute;
-			left: 13px;
-			top: 13px;
+			left: 10px;
+			top: 10px;
 			border-radius: 100%;
 			z-index: 10
 		}
@@ -168,7 +167,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<h1>DASHBOARD</h1>
 					<div class="greeting-container">
 						<div class="greeting">
-							<h3>Hola Team 7!</h3>
+							<h3>Hola [Name]!</h3>
 							<p>Dapatkan kesempatan bekerja di bidang IT dengan mengikuti lomba ini dan dapatkan
 								informasi lebih lanjut</p>
 						</div>
@@ -183,6 +182,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<div class="teammate-card d-flex">
 										<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt=""
 											class="teammate-pict">
+										<h6 class="teammate-name">Ketua</h6>
+										<div class="lomba d-flex justify-content-center align-items-center">
+											<h6>UI/UX</h6>
+										</div>
+									</div>
+									<div class="teammate-card d-flex">
+										<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt=""
+											class="teammate-pict">
 										<h6 class="teammate-name">Anggota 1</h6>
 										<div class="lomba d-flex justify-content-center align-items-center">
 											<h6>UI/UX</h6>
@@ -192,14 +199,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt=""
 											class="teammate-pict">
 										<h6 class="teammate-name">Anggota 2</h6>
-										<div class="lomba d-flex justify-content-center align-items-center">
-											<h6>UI/UX</h6>
-										</div>
-									</div>
-									<div class="teammate-card d-flex">
-										<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt=""
-											class="teammate-pict">
-										<h6 class="teammate-name">Anggota 3</h6>
 										<div class="lomba d-flex justify-content-center align-items-center">
 											<h6>UI/UX</h6>
 										</div>
@@ -232,6 +231,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt=""
 									class="teammate-pict">
 								<div class="teammate-profile">
+									<h6 class="teammate-name">Ketua</h6>
+									<ul class="text-secondary">
+										<li>Tempat tanggal lahir: </li>
+										<li>Asal sekolah: </li>
+										<li>Alamat: </li>
+									</ul>
+								</div>
+							</div>
+							<div class="teammate-card d-flex">
+								<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt=""
+									class="teammate-pict">
+								<div class="teammate-profile">
 									<h6 class="teammate-name">Anggota 1</h6>
 									<ul class="text-secondary">
 										<li>Tempat tanggal lahir: </li>
@@ -239,7 +250,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<li>Alamat: </li>
 									</ul>
 								</div>
-								<a href="#">Edit Profile</a>
 							</div>
 							<div class="teammate-card d-flex">
 								<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt=""
@@ -252,20 +262,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<li>Alamat: </li>
 									</ul>
 								</div>
-								<a href="#">Edit Profile</a>
-							</div>
-							<div class="teammate-card d-flex">
-								<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt=""
-									class="teammate-pict">
-								<div class="teammate-profile">
-									<h6 class="teammate-name">Anggota 3</h6>
-									<ul class="text-secondary">
-										<li>Tempat tanggal lahir: </li>
-										<li>Asal sekolah: </li>
-										<li>Alamat: </li>
-									</ul>
-								</div>
-								<a href="#">Edit Profile</a>
 							</div>
 						</div>
 					</div>
@@ -314,25 +310,135 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</div>
 									<div class="row-4">
 										<div class="d-flex justify-content-center mt-2 custom-control custom-checkbox">
-											<input type="checkbox" name="verify" id="verify" class="mr-2 custom-control-input mt-0">
-											<label for="verify" class="custom-control-label m-0 pt-1">Karya ini buatan saya*</label> 
+											<input type="checkbox" name="verify" id="verify"
+												class="mr-2 custom-control-input mt-0">
+											<label for="verify" class="custom-control-label m-0 pt-1">Karya ini buatan
+												saya*</label>
 										</div>
-										<button type="submit" class="btn upload-button">UPLOAD FILE</button>
-										<button type="reset" class="btn cancel-button">BATAL</button>
+										<input type="submit" class="btn btn-primary upload-button" value="UPLOAD FILE">
+										<input type="reset" class="btn btn-outline-secondary cancel-button"
+											value="BATAL">
 									</div>
 								</div>
-								<p class="w-100 text-left">*) Dengan mencentang <em>'karya ini buatan saya'</em> maka anda siap menerima konsekuensi yang ada bila ditemukan bahwa karya tersebut bukan milik anda</p>
+								<p class="w-100 text-left">*) Dengan mencentang <em>'karya ini buatan saya'</em> maka
+									anda siap menerima konsekuensi yang ada bila ditemukan bahwa karya tersebut bukan
+									milik anda</p>
 							</div>
 						</div>
 					</form>
 				</div>
 
 				<div class="tab-pane fade" id="nav-edit" role="tabpanel" aria-labelledby="nav-edit-tab">
-					<p>edit</p>
+					<h1>Edit Profile</h1>
+					<p class="text-secondary">Edit profile team anda</p>
+					<form action="" method="post">
+						<div class="container p-0">
+							<div class="d-flex flex-column p-0">
+								<h5 class="mt-3">Profile Ketua</h5>
+								<div class="row p-0">
+									<div class="col-9">
+										<label class="sr-only" for="inputNama">Nama Lengkap</label>
+										<input class="edit-profile-inputs" type="text" name="namaKetua" id="inputNama"
+											placeholder="Nama Lengkap" required>
+										<label class="sr-only" for="inputTanggal">Tanggal Lahir</label>
+										<input class="edit-profile-inputs" type="date" name="tanggalLahirKetua"
+											id="inputTanggal" placeholder="Tanggal Lahir" required>
+										<label class="sr-only" for="inputSekolah">Asal Sekolah</label>
+										<input class="edit-profile-inputs" type="text" name="sekolahKetua"
+											id="inputSekolah" placeholder="Asal Sekolah" required>
+									</div>
+									<div class="col-3 py-2">
+										<div class="edit-profile-pict">
+											<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg"
+												alt="" class="foto-profil-ketua">
+											<div class="change-pict d-flex justify-content-center align-items-center">
+												<p class="m-0">
+													Ubah foto profil
+												</p>
+												<label for="inputFile" class="sr-only">Foto profil</label>
+												<input type="file" name="fotoKetua" id="inputFile" accept="image/*">
+											</div>
+										</div>
+									</div>
+								</div>
+								<h5 class="mt-3">Profile Anggota 1</h5>
+								<div class="row p-0">
+									<div class="col-9">
+										<label class="sr-only" for="inputNama">Nama Lengkap</label>
+										<input class="edit-profile-inputs" type="text" name="namaAnggota1"
+											id="inputNama" placeholder="Nama Lengkap" required>
+										<label class="sr-only" for="inputTanggal">Tanggal Lahir</label>
+										<input class="edit-profile-inputs" type="date" name="tanggalLahirAnggota1"
+											id="inputTanggal" placeholder="Tanggal Lahir" required>
+										<label class="sr-only" for="inputSekolah">Asal Sekolah</label>
+										<input class="edit-profile-inputs" type="text" name="sekolahAnggota1"
+											id="inputSekolah" placeholder="Asal Sekolah" required>
+									</div>
+									<div class="col-3 py-2">
+										<div class="edit-profile-pict">
+											<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg"
+												alt="" class="foto-profil-Anggota1">
+											<div class="change-pict d-flex justify-content-center align-items-center">
+												<p class="m-0">
+													Ubah foto profil
+												</p>
+												<label for="inputFile" class="sr-only">Foto profil</label>
+												<input type="file" name="fotoAnggota1" id="inputFile" accept="image/*">
+											</div>
+										</div>
+									</div>
+								</div>
+								<h5 class="mt-3">Profile Anggota 2</h5>
+								<div class="row p-0">
+									<div class="col-9">
+										<label class="sr-only" for="inputNama">Nama Lengkap</label>
+										<input class="edit-profile-inputs" type="text" name="namaAnggota2"
+											id="inputNama" placeholder="Nama Lengkap" required>
+										<label class="sr-only" for="inputTanggal">Tanggal Lahir</label>
+										<input class="edit-profile-inputs" type="date" name="tanggalLahirAnggota2"
+											id="inputTanggal" placeholder="Tanggal Lahir" required>
+										<label class="sr-only" for="inputSekolah">Asal Sekolah</label>
+										<input class="edit-profile-inputs" type="text" name="sekolahAnggota2"
+											id="inputSekolah" placeholder="Asal Sekolah" required>
+									</div>
+									<div class="col-3 py-2">
+										<div class="edit-profile-pict">
+											<img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg"
+												alt="" class="foto-profil-Anggota2">
+											<div class="change-pict d-flex justify-content-center align-items-center">
+												<p class="m-0">
+													Ubah foto profil
+												</p>
+												<label for="inputFile" class="sr-only">Foto profil</label>
+												<input type="file" name="fotoAnggota2" id="inputFile" accept="image/*">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="d-flex justify-content-center align-items-center mt-5">
+								<input type="submit" class="btn btn-primary update-button" value="UPDATE PROFILE">
+							</div>
+						</div>
+					</form>
 				</div>
 
 				<div class="tab-pane fade" id="nav-security" role="tabpanel" aria-labelledby="nav-security-tab">
-					<p>security</p>
+					<h1>Security</h1>
+					<p class="text-secondary">Ganti password akun anda di sini</p>
+					<div class="container p-0 mt-5">
+						<div class="row p-0">
+							<div class="col-sm-6 col-sm-offset-3">
+								<form action="" method="post" id="passwordForm">
+									<input type="password" class="input-lg form-control my-2" name="newPass"
+										id="password1" placeholder="New Password" autocomplete="off" required>
+									<input type="submit"
+										class="change-button col-xs-12 btn btn-primary btn-load btn-sm mt-3"
+										data-loading-text="Changing Password..." value="Change Password">
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
