@@ -25,84 +25,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		rel="stylesheet">
 	<!-- custom stylesheet -->
 	<link rel="stylesheet" type="text/css" href="<?= base_url()?>css/dashboard.css">
-	<style>
-		.fx:after,
-		.sidebar .widget:after {
-			content: "";
-			display: table;
-			clear: both
-		}
-
-		.fprogress b {
-			text-transform: uppercase;
-			font-size: 14px;
-			margin-bottom: 2px;
-			display: block
-		}
-
-		.fbar {
-			width: 100%;
-			border: 1px solid #ddd;
-			height: 25px;
-			display: block;
-			border-radius: 3px;
-			text-align: center;
-			position: relative
-		}
-
-		.fbar span {
-			display: block;
-			height: 60%;
-			background: #4346E1;
-			position: relative;
-		}
-
-		.fbar span:after {
-			content: attr(data-percent);
-			color: #fff;
-			text-align: center;
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 0
-		}
-
-		.fbar-radius {
-			width: 130px;
-			height: 130px;
-			border-radius: 100%;
-			overflow: hidden;
-			border: 0;
-			left: 50px
-		}
-
-		.fbar-radius:after {
-			color: black;
-			top: 33%;
-			font-size: 20px;
-			content: attr(data-percent);
-			z-index: 30;
-			position: absolute;
-			left: 0;
-			right: 0
-		}
-
-		.fbar-radius span {
-			display: block
-		}
-
-		.fbar-radius:before {
-			content: "";
-			background: #FFF;
-			width: 110px;
-			height: 110px;
-			position: absolute;
-			left: 10px;
-			top: 10px;
-			border-radius: 100%;
-			z-index: 10
-		}
-	</style>
 </head>
 
 <body>
@@ -202,19 +124,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 						</div>
 						<div class="col-4">
-							<br><br><br><br><br><br><br><br><br><br>
-							<div class="detail-team">
+							<div class="requirements-progress">
 								<h5>Proses Registrasi</h5>
 								<p class="text-secondary">All time</p>
-								<div class="fprogress fx">
-								<p style="z-index:10;position:absolute;bottom:120px;left:40px">0%</p>
-								<p style="z-index:10;position:absolute;bottom:120px;right:35px">100%</p>
-									<div class="fbar fbar-radius" data-percent="100%"><span style="width:100%"><br>	
-										</span>
-										<h6 style="z-index:10;position:absolute;left:35px">Finished</h6>
+								<div class="progress-container text-center">
+									<div class="fprogress fx">
+										<div class="fbar fbar-radius" data-percent="100%">
+											<span style="width:100%"></span>
+											<p class="finished">Finished</p>
+											<p class="zero">0%</p>
+											<p class="full">100%</p>
+										</div>
 									</div>
+									<hr>
+									<span class="status">Sesuai Persyaratan</span>
 								</div>
-								</h5><center>Sesuai Persyaratan</center></h5>
 							</div>
 						</div>
 					</div>
@@ -427,9 +351,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="container p-0 mt-5">
 						<div class="row p-0">
 							<div class="col-sm-6 col-sm-offset-3">
-								<form action="" method="post" id="passwordForm">
+								<form action="" method="post" id="changePassForm">
 									<input type="password" class="input-lg form-control my-2" name="newPass"
 										id="password1" placeholder="New Password" autocomplete="off" required>
+									<input type="password" class="input-lg form-control my-2" name="newPassConfirmation"
+										id="password2" placeholder="Confirm Password" autocomplete="off" required>
+									<div class="invalid d-flex align-items-center">
+										<i class="fas fa-times mr-2 text-danger"></i>
+										<p class="m-0">Passwords do not match!</p>
+									</div>
+									<div class="empty d-flex align-items-center">
+										<i class="fas fa-times mr-2 text-danger"></i>
+										<p class="m-0">Passwords can not be empty!</p>
+									</div>
+									<div class="valid d-flex align-items-center">
+										<i class="fas fa-check mr-2 text-success"></i>
+										<p class="m-0">Passwords valid!</p>
+									</div>
 									<input type="submit"
 										class="change-button col-xs-12 btn btn-primary btn-load btn-sm mt-3"
 										data-loading-text="Changing Password..." value="Change Password">

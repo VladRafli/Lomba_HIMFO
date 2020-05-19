@@ -41,11 +41,16 @@ img {
 	color: #fff !important;
 }
 
-.btn.btn-primary:hover, li.active a.btn.btn-primary {
+.btn.btn-primary:hover,
+li.active a.btn.btn-primary {
 	background: transparent;
 	border-color: #4A69BB;
 	border-radius: 1rem;
 	color: #4346E1 !important;
+}
+
+.sidebar.nav {
+	display: block !important;
 }
 
 .nav-pills li {
@@ -153,6 +158,125 @@ img {
 	z-index: 3;
 	width: 50%;
 	height: 80%;
+}
+
+.requirements-progress {
+	margin: 2rem 0;
+}
+
+.requirements-progress p {
+	font-size: 0.5rem;
+}
+
+.progress-container {
+	position: relative;
+	margin-top: 1rem;
+	height: 250px;
+	border: 0.75px solid #D9D2D2;
+	border-radius: 1rem;
+}
+
+.progress-container p.finished {
+	font-size: 0.8rem !important;
+	font-weight: normal;
+}
+
+.progress-container span.status {
+	padding: 0.5rem;
+	font-size: 0.8rem;
+}
+
+.fprogress b {
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 2px;
+	display: block
+}
+
+.fbar {
+	margin-top: 3rem;
+	width: 100%;
+	border: 1px solid #ddd;
+	height: 25px;
+	display: block;
+	border-radius: 3px;
+	text-align: center;
+	position: relative;
+}
+
+.fbar p.finished {
+	position: absolute;
+	left: 40px;
+	bottom: 5px;
+	z-index: 10;
+}
+
+.fbar .zero {
+	position: absolute;
+	left: 7px;
+	bottom: 15px;
+	z-index: 10;
+}
+
+.fbar .full {
+	position: absolute;
+	left: 105px;
+	bottom: 15px;
+	z-index: 10;
+}
+
+.fbar span {
+	display: block;
+	height: 65%;
+	background: #4346E1;
+	position: relative;
+}
+
+.fbar span:after {
+	content: attr(data-percent);
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+.fbar-radius {
+	width: 130px;
+	height: 130px;
+	border-radius: 100%;
+	overflow: hidden;
+	border: 0;
+	left: 15%;
+	right: 15%;
+}
+
+.fbar-radius:after {
+	color: black;
+	top: 33%;
+	font-size: 20px;
+	content: attr(data-percent);
+	z-index: 30;
+	position: absolute;
+	left: 0;
+	right: 0
+}
+
+.fbar-radius span {
+	display: block
+}
+
+.fbar-radius:before {
+	content: "";
+	background: #FFF;
+	width: 110px;
+	height: 110px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	border-radius: 100%;
+	z-index: 10
 }
 
 .detail-team {
@@ -273,7 +397,7 @@ img {
 	height: 100%;
 }
 
-.file-drop-area input[type= "file"] {
+.file-drop-area input[type="file"] {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -294,7 +418,7 @@ img {
 	overflow-x: auto;
 	overflow-y: hidden;
 	text-overflow: ellipsis;
-  	white-space: nowrap;
+	white-space: nowrap;
 	cursor: default !important;
 }
 
@@ -302,7 +426,8 @@ label[for="verify"] {
 	font-size: 0.70rem !important;
 }
 
-.upload-button, .cancel-button {
+.upload-button,
+.cancel-button {
 	width: 100%;
 	height: 50px;
 	border-radius: 2rem;
@@ -318,7 +443,7 @@ label[for="verify"] {
 	background-color: #FFF !important;
 }
 
-.upload-button:disabled {
+.upload-button:disabled, .change-button:disabled {
 	cursor: not-allowed;
 }
 
@@ -371,7 +496,7 @@ label[for="verify"] {
 	color: #FFF;
 }
 
-.edit-profile-pict input[type="file"]{
+.edit-profile-pict input[type="file"] {
 	position: absolute;
 	left: 0;
 	bottom: 0;
