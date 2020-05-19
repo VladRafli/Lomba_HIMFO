@@ -102,11 +102,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			border-radius: 100%;
 			z-index: 10
 		}
-
-		#infront {
-			z-index: -100
-		}
-
 	</style>
 </head>
 
@@ -207,16 +202,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 						</div>
 						<div class="col-4">
+							<br><br><br><br><br><br><br><br><br><br>
 							<div class="detail-team">
 								<h5>Proses Registrasi</h5>
 								<p class="text-secondary">All time</p>
 								<div class="fprogress fx">
-									<div class="fbar fbar-radius" data-percent="100%"><span style="width:100%"><br>
-											<div id=infront>
-											</div>
+								<p style="z-index:10;position:absolute;bottom:120px;left:40px">0%</p>
+								<p style="z-index:10;position:absolute;bottom:120px;right:35px">100%</p>
+									<div class="fbar fbar-radius" data-percent="100%"><span style="width:100%"><br>	
 										</span>
+										<h6 style="z-index:10;position:absolute;left:35px">Finished</h6>
 									</div>
 								</div>
+								</h5><center>Sesuai Persyaratan</center></h5>
 							</div>
 						</div>
 					</div>
