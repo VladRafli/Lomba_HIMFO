@@ -57,9 +57,23 @@ section {
 	color: #fff !important;
 }
 
+.btn.btn-info {
+	width: 225px !important;
+	border-width: 2px;
+	background: #75A1DE;
+	border-color: #75A1DE;
+	color: #fff !important;
+}
+
 .btn.btn-primary:hover {
 	background: transparent;
 	border-color: #4A69BB;
+	color: #000 !important;
+}
+
+.btn.btn-info:hover {
+	background: transparent;
+	border-color: #75A1DE;
 	color: #000 !important;
 }
 
@@ -362,7 +376,7 @@ section {
 
 footer {
 	background-color: #8A7FF5;
-	margin-top: 25%;
+	margin-top: 10%;
 	padding: 3rem 0;
 	height: 25vh;
 	color: #fff;
@@ -395,6 +409,10 @@ footer a, footer a:hover, footer a:visited {
 
 	section {
 		text-align: center;
+	}
+
+	.actions-container {
+		justify-content: center;
 	}
 
 	footer {

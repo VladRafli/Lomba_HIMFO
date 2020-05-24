@@ -70,8 +70,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<p>
 							Lorem ipsum dolor sit amet
 						</p>
-						<a href="<?= site_url('signup')?>"><button class="btn btn-primary mt-4">Sign Up <i
-								class="fas fa-arrow-right"></i></button></a>
+						<div class="actions-container d-flex align-items-center">
+							<a href="<?= site_url('signup')?>"><button class="btn btn-primary">Sign Up <i
+										class="fas fa-arrow-right"></i></button></a>
+							<a href="" class="ml-2"><button class="btn btn-info">Attend the Workshop<i
+										class="fas fa-arrow-right ml-1"></i></button></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -93,7 +97,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							pembelajaran.
 						</p>
 						<a href="<?= site_url('signup')?>"><button class="btn btn-primary mt-sm-4 ml-sm-3">Sign Up <i
-								class="fas fa-arrow-right"></i></button></a>
+									class="fas fa-arrow-right"></i></button></a>
 					</div>
 					<div class="col-md-7">
 						<img src="<?= base_url()?>/images/Group10@2x.png" alt="home section"

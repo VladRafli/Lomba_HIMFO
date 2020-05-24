@@ -61,6 +61,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<label for="inputEmail" class="sr-only">Email</label>
 							<input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email"
 								required>
+							<label for="inputNumber" class="sr-only">No. Telp</label>
+							<input type="tel" id="inputNumber" name="number" class="form-control"
+								placeholder="No. Telp" required>
 							<div class="custom-file text-left">
 								<input type="file" class="custom-file-input form-control" id="inputFile" name="file">
 								<label class="custom-file-label" for="inputFile">Upload Kartu Pelajar</label>
