@@ -24,15 +24,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<header>
 		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light pt-3 pb-3">
 			<div class="container">
-				<a class="navbar-brand" href="<?= site_url()?>"><img src="<?= base_url()?>images/chrome.png" alt="logo"
-						class="w-25">Himfest</a>
+				<a class="navbar-brand" href="<?= site_url()?>"><img src="<?= base_url()?>images/himfest-logo.png" alt="logo"
+						class="w-25"><span class="m-0 ml-2">Himfest</span></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
 					aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-					<ul class="navbar-nav mr-auto ml-auto mt-2 mt-lg-0">
+					<ul class="navbar-nav mr-auto ml-5 mt-2 mt-lg-0">
 						<li class="nav-item mr-1 ml-1 active">
 							<a class="nav-link" href="#about">About</a>
 						</li>
@@ -67,7 +67,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							Make programming skill your new exp
 						</h1>
 						<p>
-							Lorem ipsum dolor sit amet
+							Upgrade skill UI/UX kamu sekarang!
 						</p>
 						<div class="actions-container d-flex align-items-center">
 							<a href="<?= site_url('signup')?>"><button class="btn btn-primary">Register <i
@@ -93,7 +93,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							Informasi dalam dunia pendidikan yang ditujukan untuk memberikan warna baru dalam media
 							pembelajaran.
 						</p>
-						<a href="<?= site_url('signup')?>"><button class="btn btn-primary mt-sm-4 ml-sm-3">Sign Up <i
+						<a href="<?= site_url('signup')?>"><button class="btn btn-primary mt-sm-4 ml-sm-3">Register <i
 									class="fas fa-arrow-right"></i></button></a>
 					</div>
 					<div class="col-md-7">
@@ -112,38 +112,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<ul class="timeline timeline-horizontal">
 							<li class="timeline-item col">
 								<div class="timeline-date">
-									Registrasi Dibuka
-									<p>( Semua Bidang )</p>
-									1 Februari 2020
+									<p>22 JUNI - 13 JULI</p>
+									<p>Pendaftaran peserta</p>
 								</div>
 								<div class="timeline-badge primary">
 								</div>
 								<div class="timeline-name">
-									-
 								</div>
 							</li>
 							<li class="timeline-item col">
 								<div class="timeline-date">
-									Registrasi Di Tutup
-									<p>( Semua Bidang )</p>
-									1 Januari 2020
+									<p>13 JULI - 14 JULI</p>
+									<p>Workshop UI dan UX</p>
 								</div>
 								<div class="timeline-badge success">
 								</div>
 								<div class="timeline-name">
-									Berlangsung
 								</div>
 							</li>
 							<li class="timeline-item col">
 								<div class="timeline-date">
-									Acara Puncak
-									<p>( Semua Bidang )</p>
-									13 Maret 2020
+									<p>18 JULI</p>
+									<p>Batas pengumpulan karya</p>
 								</div>
 								<div class="timeline-badge info">
 								</div>
 								<div class="timeline-name">
-									-
 								</div>
 							</li>
 						</ul>
@@ -157,46 +151,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="row">
 					<div class="guidelines-container text-center col-md-10 offset-md-1" style="width:100%">
 						<h1>Guidelines</h1>
-						<nav>
+						<!-- <nav>
 							<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
 								<a class="nav-item nav-link active" id="nav-ui/ux-tab" data-toggle="tab"
 									href="#nav-ui/ux" role="tab" aria-controls="nav-ui/ux"
 									aria-selected="true">UI/UX</a>
-								<a class="nav-item nav-link" id="nav-website-tab" data-toggle="tab" href="#nav-website"
-									role="tab" aria-controls="nav-website" aria-selected="false">Website</a>
 							</div>
-						</nav>
+						</nav> -->
 						<div class="tab-content py-3 px-3 px-sm-0 text-left" id="nav-tabContent">
 							<div class="tab-pane fade show active" id="nav-ui/ux" role="tabpanel"
 								aria-labelledby="nav-ui/ux-tab">
-								<ol type="number">
-									<li>Peserta bisa perorangan atau tim beranggotakan maksimal 3 orang yang terdiri
-										(tapi tidak
-										terbatas dari) UI Designer, UX
-										Designer, UX Researcher, UX Writer, Graphic Designer, Copywriter, Project
-										Manager,
-										Product Owner, Front-end Developer,
-										atau Back-end Developer, dll.
-									</li>
-									<li>Semua peserta harus menyetujui dan mengikuti Syarat dan Ketentuan (umum dan
-										khusus)
-									</li>
-									<li>
-										Daftarkan diri atau tim kamu melalui link pendaftaran. Tim Jenius akan
-										mengirimkan link
-										untuk pengiriman karya kamu ke
-										email yang telah didaftarkan.
-									</li>
-									<li>
-										10 tim terpilih akan mendapatkan kesempatan untuk bersaing ke babak final dan
-										melempar
-										ide desain UI/UX mereka di
-										Co.Creation Week 2020
-									</li>
-								</ol>
-							</div>
-							<div class="tab-pane fade" id="nav-website" role="tabpanel"
-								aria-labelledby="nav-website-tab">
 								<ol type="number">
 									<li>Peserta bisa perorangan atau tim beranggotakan maksimal 3 orang yang terdiri
 										(tapi tidak
@@ -269,9 +233,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 						</div>
 
-						<p class="mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nesciunt quas
-							quibusdam hic harum
-							doloribus id, dolorum iusto possimus impedit.</p>
+						<p class="mt-2">Terdapat hadiah tambahan bagi juara 1 - 3, yaitu beasiswa 100% untuk biaya DP3 di Binus University Malang. Sedangkan untuk runner up (juara 4 & 5) akan masing-masing mendapatkan hadiah sebesar 100 ribu rupiah.</p>
 					</div>
 				</div>
 			</div>
@@ -284,23 +246,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-md-8">
 					<div class="row">
 						<div class="col-4 d-flex justify-content-center align-items-center">
-							<img src="<?= base_url()?>images/chrome.png" alt="logo" class="w-25">
-							<h6 class="m-0">Himfest</h6>
+							<img src="<?= base_url()?>images/himfest-logo.png" alt="logo" class="w-25">
+							<h6 class="m-0 ml-2">Himfest</h6>
 						</div>
 						<div class="col-4 d-flex flex-column justify-content-center">
 							<h5>PHONE</h5>
-							<p class="mt-2">+6288100928</p>
+							<p class="mt-2">0815-5320-5808</p>
 						</div>
 						<div class="col-4 d-flex flex-column justify-content-center">
 							<h5>EMAIL</h5>
-							<p class="mt-2">himfo.uhuy@rocketmail.com</p>
+							<p class="mt-2">it.himfo@gmail.com</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="social">
-						<a href="#" class="d-inline-block mx-3"><i class="fab fa-instagram fa-2x"></i></a>
-						<a href="#" class="d-inline-block mx-3"><i class="fab fa-github fa-2x"></i></a>
+						<a href="https://www.instagram.com/himfo.binusmlg/" class="d-inline-block mx-3"><i class="fab fa-instagram fa-2x"></i></a>
 					</div>
 				</div>
 			</div>

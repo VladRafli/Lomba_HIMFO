@@ -106,17 +106,6 @@ section {
 
 /* timeline */
 
-.timeline-container {
-	margin: 7.5rem auto;
-	padding: 2rem;
-	width: 60%;
-	height: 50%;
-}
-
-.timeline-container h1 {
-	margin-bottom: 5rem;
-}
-
 .timeline, .timeline-horizontal {
 	list-style: none;
 	padding: 20px;
