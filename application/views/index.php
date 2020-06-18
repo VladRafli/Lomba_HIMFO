@@ -47,8 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</li>
 					</ul>
 					<div class="form-inline my-2 my-lg-0">
-						<a href="<?= site_url('login')?>"><button class="btn my-2 my-sm-0">Login</button></a>
-						<a href="<?= site_url('signup')?>"><button class="btn btn-primary my-2 my-sm-0">Sign Up <i
+						<a href="<?= site_url('signup')?>"><button class="btn btn-primary my-2 my-sm-0">Register <i
 									class="fas fa-arrow-right"></i></button></a>
 					</div>
 				</div>
@@ -71,10 +70,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							Lorem ipsum dolor sit amet
 						</p>
 						<div class="actions-container d-flex align-items-center">
-							<a href="<?= site_url('signup')?>"><button class="btn btn-primary">Sign Up <i
+							<a href="<?= site_url('signup')?>"><button class="btn btn-primary">Register <i
 										class="fas fa-arrow-right"></i></button></a>
-							<a href="" class="ml-2"><button class="btn btn-info">Attend the Workshop<i
-										class="fas fa-arrow-right ml-1"></i></button></a>
 						</div>
 					</div>
 				</div>
