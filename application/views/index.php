@@ -47,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</li>
 					</ul>
 					<div class="form-inline my-2 my-lg-0">
-						<a href="<?= site_url('signup')?>"><button class="btn btn-primary my-2 my-sm-0">Register <i
+						<a href="https://forms.gle/qGFtb9Ep8Jn1ZsEr6"><button class="btn btn-primary my-2 my-sm-0">Register <i
 									class="fas fa-arrow-right"></i></button></a>
 					</div>
 				</div>
@@ -70,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							Upgrade skill UI/UX kamu sekarang!
 						</p>
 						<div class="actions-container d-flex align-items-center">
-							<a href="<?= site_url('signup')?>"><button class="btn btn-primary">Register <i
+							<a href="https://forms.gle/qGFtb9Ep8Jn1ZsEr6"><button class="btn btn-primary">Register <i
 										class="fas fa-arrow-right"></i></button></a>
 						</div>
 					</div>
@@ -81,8 +81,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<section id="about">
 			<div class="container-fluid">
 				<div class="row pt-md-5 mt-md-5">
-					<div class="col-md-5 pl-5 text-left">
-						<h1 class="flex pl-sm-3">
+					<div class="col-md-5 pl-5 pt-5 text-left">
+						<h1 class="flex mt-5 pl-sm-3">
 							About Himfest
 						</h1>
 						<p class="mt-sm-5 pl-sm-3">
@@ -93,12 +93,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							Informasi dalam dunia pendidikan yang ditujukan untuk memberikan warna baru dalam media
 							pembelajaran.
 						</p>
-						<a href="<?= site_url('signup')?>"><button class="btn btn-primary mt-sm-4 ml-sm-3">Register <i
+						<a href="https://forms.gle/qGFtb9Ep8Jn1ZsEr6"><button class="btn btn-primary mt-sm-4 ml-sm-3">Register <i
 									class="fas fa-arrow-right"></i></button></a>
 					</div>
 					<div class="col-md-7">
-						<img src="<?= base_url()?>/images/Group10@2x.png" alt="home section"
-							class="w-100 position-relative" style="right:-15px">
+						<img src="<?= base_url()?>/images/draft.png" alt="home section"
+								class="about-img position-relative">
 					</div>
 				</div>
 			</div>
@@ -162,28 +162,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<div class="tab-pane fade show active" id="nav-ui/ux" role="tabpanel"
 								aria-labelledby="nav-ui/ux-tab">
 								<ol type="number">
-									<li>Peserta bisa perorangan atau tim beranggotakan maksimal 3 orang yang terdiri
-										(tapi tidak
-										terbatas dari) UI Designer, UX
-										Designer, UX Researcher, UX Writer, Graphic Designer, Copywriter, Project
-										Manager,
-										Product Owner, Front-end Developer,
-										atau Back-end Developer, dll.
+									<li>Peserta wajib merupakan siswa aktif SMA IPA/MA IPA, SMK jurusan IT/RPL/TKL sederajat.
 									</li>
-									<li>Semua peserta harus menyetujui dan mengikuti Syarat dan Ketentuan (umum dan
-										khusus)
+									<li>Peserta harus mendaftar sesuai yang ada pada kartu identitas
 									</li>
 									<li>
-										Daftarkan diri atau tim kamu melalui link pendaftaran. Tim Jenius akan
-										mengirimkan link
-										untuk pengiriman karya kamu ke
-										email yang telah didaftarkan.
+										Peserta menyetujui apabila sewaktu-waktu di hubungi oleh panitia HIMFEST 2020
 									</li>
 									<li>
-										10 tim terpilih akan mendapatkan kesempatan untuk bersaing ke babak final dan
-										melempar
-										ide desain UI/UX mereka di
-										Co.Creation Week 2020
+										Pengumpulan karya dapat dimulai dari tanggal 13 Juli 2020 pukul 10.00 WIB - 18 Juli 2020 pukul 23.59 WIB. Peserta harus mengumpulkan pada waktu yang telah ditentukan, jika terlambat maka karya yang dikumpulkan tidak dapat dinilai.
 									</li>
 								</ol>
 							</div>
@@ -191,8 +178,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<a href="#">
 							<button type="button" name="btn-signup" class="btn btn-secondary">
 								<div class="d-flex justify-content-center align-items-center">
-									<span class="mr-3">Download Guidebook</span>
-									<i class="fas fa-download"></i>
+									<a href="<?= base_url()?>/storage/guidebook.pdf" class="download-btn btn">
+										<span class="mr-3">Download Guidebook</span>
+										<i class="fas fa-download"></i>
+									</a>
 								</div>
 							</button>
 						</a>
@@ -233,7 +222,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 						</div>
 
-						<p class="mt-2">Terdapat hadiah tambahan bagi juara 1 - 3, yaitu beasiswa 100% untuk biaya DP3 di Binus University Malang. Sedangkan untuk runner up (juara 4 & 5) akan masing-masing mendapatkan hadiah sebesar 100 ribu rupiah.</p>
+						<p class="mt-2">Terdapat hadiah tambahan bagi juara 1 - 3, yaitu beasiswa 100% untuk biaya DP3 di Binus University Malang*. Sedangkan untuk runner up (juara 4 & 5) akan masing-masing mendapatkan hadiah sebesar 100 ribu rupiah.</p>
+
+						<p class="sk mt-5">*) Syarat dan ketentuan berlaku</p>
 					</div>
 				</div>
 			</div>
