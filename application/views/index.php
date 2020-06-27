@@ -60,7 +60,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-8">
-						<img src="<?= base_url()?>/images/home.png" alt="home section" class="w-100">
+						<img src="<?= base_url()?>/images/Layer-1.png" alt="home section" class="w-100 mt-3 ml-3">
 					</div>
 					<div class="col-md-4 pt-5 d-flex flex-column justify-content-center">
 						<h1>
