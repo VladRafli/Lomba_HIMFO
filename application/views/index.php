@@ -98,7 +98,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 					<div class="col-md-7">
 						<img src="<?= base_url()?>/images/draft.png" alt="home section"
-								class="about-img position-relative">
+								class="about-img position-relative" >
 					</div>
 				</div>
 			</div>
