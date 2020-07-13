@@ -112,8 +112,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<ul class="timeline timeline-horizontal">
 							<li class="timeline-item col">
 								<div class="timeline-date">
-									<p>22 JUNI - 13 JULI</p>
-									<p>Pendaftaran peserta</p>
+									<p>13 JULI - 14 JULI</p>
+									<p>Workshop UI dan UX</p>
 								</div>
 								<div class="timeline-badge primary">
 								</div>
@@ -122,8 +122,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</li>
 							<li class="timeline-item col">
 								<div class="timeline-date">
-									<p>13 JULI - 14 JULI</p>
-									<p>Workshop UI dan UX</p>
+									<p>18 JULI</p>
+									<p>Batas pengumpulan karya</p>
 								</div>
 								<div class="timeline-badge success">
 								</div>
@@ -132,8 +132,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</li>
 							<li class="timeline-item col">
 								<div class="timeline-date">
-									<p>18 JULI</p>
-									<p>Batas pengumpulan karya</p>
+									<p>21 JULI</p>
+									<p style="font-size: 20px; font-weight: bold;">Presentasi dan Pengumuman Juara</p>
 								</div>
 								<div class="timeline-badge info">
 								</div>
